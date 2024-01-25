@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */; };
+		3E1C34ED2B6211CB0053D3E8 /* BodoniFLF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E1C34EC2B6211CB0053D3E8 /* BodoniFLF.ttf */; };
 		3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */; };
-		3ECCCBBD2B619502008F52FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBC2B619502008F52FE /* ContentView.swift */; };
+		3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBC2B619502008F52FE /* ZipperView.swift */; };
 		3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBE2B619504008F52FE /* Assets.xcassets */; };
 		3ECCCBC22B619504008F52FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECCCBC12B619504008F52FE /* Preview Assets.xcassets */; };
 		3ECCCBCC2B619504008F52FE /* EASE_AMINDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBCB2B619504008F52FE /* EASE_AMINDTests.swift */; };
@@ -34,9 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		3E1C34EC2B6211CB0053D3E8 /* BodoniFLF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BodoniFLF.ttf; path = ../../../BodoniFLF.ttf; sourceTree = "<group>"; };
+		3E1C34F02B6214640053D3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3ECCCBB72B619502008F52FE /* EASE-AMIND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EASE-AMIND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDApp.swift; sourceTree = "<group>"; };
-		3ECCCBBC2B619502008F52FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3ECCCBBC2B619502008F52FE /* ZipperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipperView.swift; sourceTree = "<group>"; };
 		3ECCCBBE2B619504008F52FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ECCCBC12B619504008F52FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ECCCBC72B619504008F52FE /* EASE-AMINDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EASE-AMINDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,9 +99,12 @@
 		3ECCCBB92B619502008F52FE /* EASE-AMIND */ = {
 			isa = PBXGroup;
 			children = (
+				3E1C34F02B6214640053D3E8 /* Info.plist */,
 				3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */,
-				3ECCCBBC2B619502008F52FE /* ContentView.swift */,
+				3ECCCBBC2B619502008F52FE /* ZipperView.swift */,
+				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
+				3E1C34EC2B6211CB0053D3E8 /* BodoniFLF.ttf */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
 			path = "EASE-AMIND";
@@ -231,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1C34ED2B6211CB0053D3E8 /* BodoniFLF.ttf in Resources */,
 				3ECCCBC22B619504008F52FE /* Preview Assets.xcassets in Resources */,
 				3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECCCBBD2B619502008F52FE /* ContentView.swift in Sources */,
+				3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */,
+				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +435,7 @@
 				DEVELOPMENT_TEAM = Q8CANVUFUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EASE-AMIND/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +465,7 @@
 				DEVELOPMENT_TEAM = Q8CANVUFUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EASE-AMIND/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
