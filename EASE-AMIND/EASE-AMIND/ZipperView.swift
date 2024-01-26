@@ -7,17 +7,39 @@
 
 import SwiftUI
 
-struct ZipperView: View {
-    var body: some View {
-        
-        ZStack {
-            Color(.white)
-                .ignoresSafeArea()
-            
-            Text("ZIPPER")
-        }
+extension UIColor
+{
+    var isDarkColor: Bool {
+        var r, g, b, a: CGFloat
+        (r, g, b, a) = (0, 0, 0, 0)
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        let lum = 0.2126 * r + 0.7152 * g + 0.0722 * b
+        return  lum < 0.50
     }
 }
+
+    
+struct ZipperView: View {
+    @State var bgColor = Color.clear
+
+    var body: some View {
+        
+            ZStack {
+                Color(.customDarkBlue)
+                    .ignoresSafeArea()
+                
+                VStack {
+                    ColorPicker("Change the Background Color!", selection: $bgColor)
+//                        .ColorPicker.textColor = view.backgroundColor?.isDarkColor == true ? .white : .black
+
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(bgColor)
+            }
+        }
+    }
+
 
 #Preview {
     ZipperView()

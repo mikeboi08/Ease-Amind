@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SplashScreen: View {
+    @State var isSheetShowing = false
+    @State var isColorpickShowing = false
+    
     @State var isActive = false
     var body: some View {
         ZStack {
