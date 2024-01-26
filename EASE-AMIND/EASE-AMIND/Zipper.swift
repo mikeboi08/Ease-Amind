@@ -30,7 +30,6 @@ class Zipper: UIViewController{
         UIView.animate(withDuration: 0.8) {
             zipper.setValue(80.0, animated: true)
         }
-        
         self.view = view
     }
     

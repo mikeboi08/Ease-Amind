@@ -12,8 +12,6 @@ struct ZipperView: View {
 
     var body: some View {
         ZStack{
-            Color.customDarkBlue
-                .ignoresSafeArea()
             VStack{
                 SliderView()
                     .rotationEffect(Angle(degrees: 90))
