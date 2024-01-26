@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ZipperView: View {
+    let feedbackGenerator = UISelectionFeedbackGenerator()
+
     var body: some View {
-        Text("ZIPPER")
+        ZStack{
+            Color.customDarkBlue
+                .ignoresSafeArea()
+            VStack{
+                SliderView()
+                    .rotationEffect(Angle(degrees: 90))
+            }
+            .ignoresSafeArea()
+        }
     }
 }
 
