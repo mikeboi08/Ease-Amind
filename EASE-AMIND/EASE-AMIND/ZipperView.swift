@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ZipperView: View {
     var body: some View {
-        Text("ZIPPER")
+        
+        ZStack {
+            Color(.white)
+                .ignoresSafeArea()
+            
+            Text("ZIPPER")
+        }
     }
 }
 
