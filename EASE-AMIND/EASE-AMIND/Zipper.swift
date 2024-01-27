@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 class Zipper: UIViewController{
     
@@ -13,9 +14,9 @@ class Zipper: UIViewController{
         super.viewDidLoad()
         
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         
-        let zipper = UISlider(frame:CGRect(x: 0, y: 0, width: 300, height: 20))
+        let zipper = UISlider(frame:CGRect(x: 0, y: 0, width: 500, height: 20))
         zipper.center = self.view.center
  
         zipper.minimumValue = 0
@@ -29,7 +30,6 @@ class Zipper: UIViewController{
         UIView.animate(withDuration: 0.8) {
             zipper.setValue(80.0, animated: true)
         }
-        
         self.view = view
     }
     
@@ -38,6 +38,20 @@ class Zipper: UIViewController{
      
     }
 }
+
+struct SliderView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = Zipper
+    
+    func makeUIViewController(context: Context) -> Zipper {
+        let vc = Zipper()
+        return vc
+    }
+    
+    func updateUIViewController(_ uiViewController: Zipper, context: Context) {
+        // Updates the state of the specified view controller with new information from SwiftUI.
+    }
+}
+
 
 #Preview {
     Zipper()

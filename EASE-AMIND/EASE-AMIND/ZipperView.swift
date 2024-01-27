@@ -37,6 +37,7 @@ struct ZipperView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(bgColor)
             }
+            .ignoresSafeArea()
         }
     }
 
