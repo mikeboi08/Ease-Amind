@@ -15,9 +15,7 @@
 		3ECCCBCC2B619504008F52FE /* EASE_AMINDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBCB2B619504008F52FE /* EASE_AMINDTests.swift */; };
 		3ECCCBD62B619504008F52FE /* EASE_AMINDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */; };
 		3ECCCBD82B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */; };
-		FFCD76F42B64324B007DDFE7 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD76F32B64324B007DDFE7 /* Zipper.swift */; };
-		FFCD76F62B64357F007DDFE7 /* BodoniflfRoman-vmAD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFCD76F52B64357F007DDFE7 /* BodoniflfRoman-vmAD.ttf */; };
-		FFCD76F82B645368007DDFE7 /* ZipperTrackAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD76F72B645367007DDFE7 /* ZipperTrackAnimation.swift */; };
+		3EE531492B64346B00E5CA3E /* ZipperView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* ZipperView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +48,7 @@
 		3ECCCBD12B619504008F52FE /* EASE-AMINDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EASE-AMINDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITests.swift; sourceTree = "<group>"; };
 		3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FFCD76F32B64324B007DDFE7 /* Zipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
-		FFCD76F52B64357F007DDFE7 /* BodoniflfRoman-vmAD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BodoniflfRoman-vmAD.ttf"; sourceTree = "<group>"; };
-		FFCD76F72B645367007DDFE7 /* ZipperTrackAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipperTrackAnimation.swift; sourceTree = "<group>"; };
+		3EE531482B64346B00E5CA3E /* ZipperView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipperView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +104,7 @@
 				3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */,
 				3ECCCBBC2B619502008F52FE /* ZipperView.swift */,
 				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
-				FFCD76F32B64324B007DDFE7 /* Zipper.swift */,
-				FFCD76F72B645367007DDFE7 /* ZipperTrackAnimation.swift */,
+				3EE531482B64346B00E5CA3E /* ZipperView1.swift */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
@@ -273,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */,
-				FFCD76F42B64324B007DDFE7 /* Zipper.swift in Sources */,
+				3EE531492B64346B00E5CA3E /* ZipperView1.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
 				FFCD76F82B645368007DDFE7 /* ZipperTrackAnimation.swift in Sources */,
