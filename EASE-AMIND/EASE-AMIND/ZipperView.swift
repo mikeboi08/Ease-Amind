@@ -33,6 +33,8 @@ struct ZipperView: View {
 //                        .ColorPicker.textColor = view.backgroundColor?.isDarkColor == true ? .white : .black
 
                     Spacer()
+                    SliderView()
+                        .rotationEffect(Angle(degrees: 90))
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(bgColor)
