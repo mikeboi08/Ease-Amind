@@ -15,7 +15,7 @@
 		3ECCCBCC2B619504008F52FE /* EASE_AMINDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBCB2B619504008F52FE /* EASE_AMINDTests.swift */; };
 		3ECCCBD62B619504008F52FE /* EASE_AMINDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */; };
 		3ECCCBD82B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */; };
-		3EE531492B64346B00E5CA3E /* ZipperView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* ZipperView1.swift */; };
+		3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* Zipper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		3ECCCBD12B619504008F52FE /* EASE-AMINDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EASE-AMINDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITests.swift; sourceTree = "<group>"; };
 		3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3EE531482B64346B00E5CA3E /* ZipperView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipperView1.swift; sourceTree = "<group>"; };
+		3EE531482B64346B00E5CA3E /* Zipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,6 @@
 		3ECCCBAE2B619502008F52FE = {
 			isa = PBXGroup;
 			children = (
-				FFCD76F52B64357F007DDFE7 /* BodoniflfRoman-vmAD.ttf */,
 				3ECCCBB92B619502008F52FE /* EASE-AMIND */,
 				3ECCCBCA2B619504008F52FE /* EASE-AMINDTests */,
 				3ECCCBD42B619504008F52FE /* EASE-AMINDUITests */,
@@ -104,7 +103,7 @@
 				3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */,
 				3ECCCBBC2B619502008F52FE /* ZipperView.swift */,
 				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
-				3EE531482B64346B00E5CA3E /* ZipperView1.swift */,
+				3EE531482B64346B00E5CA3E /* Zipper.swift */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
@@ -242,7 +241,6 @@
 			files = (
 				3ECCCBC22B619504008F52FE /* Preview Assets.xcassets in Resources */,
 				3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */,
-				FFCD76F62B64357F007DDFE7 /* BodoniflfRoman-vmAD.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */,
-				3EE531492B64346B00E5CA3E /* ZipperView1.swift in Sources */,
+				3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
-				FFCD76F82B645368007DDFE7 /* ZipperTrackAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
