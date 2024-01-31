@@ -16,6 +16,7 @@
 		3ECCCBD62B619504008F52FE /* EASE_AMINDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */; };
 		3ECCCBD82B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */; };
 		3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* Zipper.swift */; };
+		FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITests.swift; sourceTree = "<group>"; };
 		3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3EE531482B64346B00E5CA3E /* Zipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
+		FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3ECCCBBC2B619502008F52FE /* ZipperView.swift */,
 				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
 				3EE531482B64346B00E5CA3E /* Zipper.swift */,
+				FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
@@ -269,6 +272,7 @@
 				3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
+				FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

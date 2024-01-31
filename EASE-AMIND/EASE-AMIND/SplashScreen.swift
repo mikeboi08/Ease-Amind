@@ -28,15 +28,17 @@ struct SplashScreen: View {
                         .padding(30)
 //                    Spacer()
                     Text("E A S E - A M I N D")
-                        .font(Font.custom("BodoniFLF", size: 40))
+                        .font(Font.custom("BodoniFLF", size: 35))
+                        .foregroundStyle(Color.black)
                         .padding(32)
+                        .scaledToFit()
                 }
                 //Spacer()
                 
             }
                 
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     withAnimation {
                         self.isActive = true
                     }
