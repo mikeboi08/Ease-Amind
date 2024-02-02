@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import UIKit
 
 
 struct TrackAnimation: View {
-    @Binding var trackMove: Bool
+    @State var trackMove = false
     
-    var totalDuration = 1.0
     var body: some View {
         ZStack{
             Toggle("", isOn: $trackMove)
@@ -19,11 +19,22 @@ struct TrackAnimation: View {
                 .offset(x: trackMove ? 0: 0, y: trackMove ? -500: 0)
                 .rotationEffect(Angle(degrees: trackMove ? 35: 0))
                 .animation(.easeInOut(duration: 0.5), value: trackMove)
+            Image("Track Piece")
+                .offset(x: trackMove ? 0: 0, y: trackMove ? -510: 10)
+                .rotationEffect(Angle(degrees: trackMove ? -35: 0))
+                .animation(.easeInOut(duration: 0.5), value: trackMove)
+            
         }
     }
     
 }
+func trackPath(){
+    let startingPoint = CGPoint(x: 0.0, y: 0.0)
+    let bezierPath = UIBezierPath()
+    bezierPath.move(to: startingPoint)
+    //bezierPath.addCurve(to: <#T##CGPoint#>, controlPoint1: <#T##CGPoint#>, controlPoint2: <#T##CGPoint#>)
+}
 
 #Preview {
-    TrackAnimation(trackMove: .constant(false))
+    TrackAnimation()
 }

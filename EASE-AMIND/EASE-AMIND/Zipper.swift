@@ -9,27 +9,26 @@ import SwiftUI
 import UIKit
 
 class Zipper: UIViewController{
-    @State var zipperPulled = false
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let view = UIView()
         view.backgroundColor = .clear
-        
-        let zipper = UISlider(frame:CGRect(x: 10, y: 10, width: 800, height: 10))
+
+        let zipper = UISlider(frame:CGRect(x: 10, y: 10, width: 700, height: 10))
         zipper.center = self.view.center
         zipper.transform = CGAffineTransform(rotationAngle: -80.11)
         zipper.minimumValue = 0
         zipper.maximumValue = 100
         zipper.isContinuous = true
         zipper.tintColor = .clear
-        
+
         zipper.setThumbImage(UIImage(named: "Zipper"), for: .normal)
         zipper.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
-            
-        
         view.addSubview(zipper)
         
+       
         UIView.animate(withDuration: 0.8) {
             zipper.setValue(80.0, animated: true)
         }
@@ -38,7 +37,11 @@ class Zipper: UIViewController{
     
     @objc func sliderValueDidChange(_ sender:UISlider!)
     {
-     
+        let currentValue = Int(sender.value)
+        if currentValue % 2 == 0 && currentValue != 0{
+            let generator = UIImpactFeedbackGenerator(style: .rigid)
+            generator.impactOccurred()
+        }
     }
 }
 
