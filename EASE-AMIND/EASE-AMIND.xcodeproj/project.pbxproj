@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */; };
+		3EA363E02B6D89E100218246 /* TestingSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA363DF2B6D89E100218246 /* TestingSound.swift */; };
+		3EA363E42B6D8B3E00218246 /* BackpackZip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EA363E22B6D8B3E00218246 /* BackpackZip.mp3 */; };
+		3EA363E52B6D8B3E00218246 /* Zipper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EA363E32B6D8B3E00218246 /* Zipper.mp3 */; };
 		3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */; };
 		3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBC2B619502008F52FE /* ZipperView.swift */; };
 		3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECCCBBE2B619504008F52FE /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		3E1C34F02B6214640053D3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3EA363DF2B6D89E100218246 /* TestingSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingSound.swift; path = ../TestingSound.swift; sourceTree = "<group>"; };
+		3EA363E22B6D8B3E00218246 /* BackpackZip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackpackZip.mp3; sourceTree = "<group>"; };
+		3EA363E32B6D8B3E00218246 /* Zipper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zipper.mp3; sourceTree = "<group>"; };
 		3ECCCBB72B619502008F52FE /* EASE-AMIND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EASE-AMIND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECCCBBA2B619502008F52FE /* EASE_AMINDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDApp.swift; sourceTree = "<group>"; };
 		3ECCCBBC2B619502008F52FE /* ZipperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipperView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA363E12B6D89FA00218246 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3EA363E22B6D8B3E00218246 /* BackpackZip.mp3 */,
+				3EA363E32B6D8B3E00218246 /* Zipper.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		3ECCCBAE2B619502008F52FE = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +122,8 @@
 				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
 				3EE531482B64346B00E5CA3E /* Zipper.swift */,
 				FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */,
+				3EA363DF2B6D89E100218246 /* TestingSound.swift */,
+				3EA363E12B6D89FA00218246 /* Sound */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
@@ -242,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA363E42B6D8B3E00218246 /* BackpackZip.mp3 in Resources */,
 				3ECCCBC22B619504008F52FE /* Preview Assets.xcassets in Resources */,
+				3EA363E52B6D8B3E00218246 /* Zipper.mp3 in Resources */,
 				3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +291,7 @@
 				3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
+				3EA363E02B6D89E100218246 /* TestingSound.swift in Sources */,
 				FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
