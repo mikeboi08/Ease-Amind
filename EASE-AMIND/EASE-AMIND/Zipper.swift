@@ -9,13 +9,13 @@ import SwiftUI
 import UIKit
 
 class Zipper: UIViewController{
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let view = UIView()
         view.backgroundColor = .clear
-
+        
         let zipper = UISlider(frame:CGRect(x: 10, y: 10, width: 700, height: 10))
         zipper.center = self.view.center
         zipper.transform = CGAffineTransform(rotationAngle: -80.11)
@@ -23,12 +23,12 @@ class Zipper: UIViewController{
         zipper.maximumValue = 100
         zipper.isContinuous = true
         zipper.tintColor = .clear
-
+        
         zipper.setThumbImage(UIImage(named: "Zipper"), for: .normal)
         zipper.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
         view.addSubview(zipper)
         
-       
+        
         UIView.animate(withDuration: 0.8) {
             zipper.setValue(80.0, animated: true)
         }

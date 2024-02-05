@@ -26,7 +26,7 @@ struct SplashScreen: View {
                         .scaledToFit()
                         .imageScale(.medium)
                         .padding(30)
-//                    Spacer()
+                    //                    Spacer()
                     Text("E A S E - A M I N D")
                         .font(Font.custom("BodoniFLF", size: 35))
                         .foregroundStyle(Color.black)
@@ -36,7 +36,7 @@ struct SplashScreen: View {
                 //Spacer()
                 
             }
-                
+            
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     withAnimation {

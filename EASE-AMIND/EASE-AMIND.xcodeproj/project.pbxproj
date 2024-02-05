@@ -19,6 +19,8 @@
 		3ECCCBD62B619504008F52FE /* EASE_AMINDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */; };
 		3ECCCBD82B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */; };
 		3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* Zipper.swift */; };
+		3EF925132B7417A3007BCB5D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF925122B7417A3007BCB5D /* SettingsView.swift */; };
+		3EFF7F172B72C25000DEA288 /* PencilZip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */; };
 		FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		3ECCCBD52B619504008F52FE /* EASE_AMINDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITests.swift; sourceTree = "<group>"; };
 		3ECCCBD72B619504008F52FE /* EASE_AMINDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EASE_AMINDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3EE531482B64346B00E5CA3E /* Zipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
+		3EF925122B7417A3007BCB5D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PencilZip.mp3; sourceTree = "<group>"; };
 		FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,7 @@
 		3EA363E12B6D89FA00218246 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */,
 				3EA363E22B6D8B3E00218246 /* BackpackZip.mp3 */,
 				3EA363E32B6D8B3E00218246 /* Zipper.mp3 */,
 			);
@@ -97,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				3ECCCBB92B619502008F52FE /* EASE-AMIND */,
-				3ECCCBCA2B619504008F52FE /* EASE-AMINDTests */,
 				3ECCCBD42B619504008F52FE /* EASE-AMINDUITests */,
 				3ECCCBB82B619502008F52FE /* Products */,
 			);
@@ -123,8 +127,10 @@
 				3EE531482B64346B00E5CA3E /* Zipper.swift */,
 				FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */,
 				3EA363DF2B6D89E100218246 /* TestingSound.swift */,
+				3EF925122B7417A3007BCB5D /* SettingsView.swift */,
 				3EA363E12B6D89FA00218246 /* Sound */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
+				3ECCCBCA2B619504008F52FE /* EASE-AMINDTests */,
 				3ECCCBC02B619504008F52FE /* Preview Content */,
 			);
 			path = "EASE-AMIND";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA363E42B6D8B3E00218246 /* BackpackZip.mp3 in Resources */,
+				3EFF7F172B72C25000DEA288 /* PencilZip.mp3 in Resources */,
 				3ECCCBC22B619504008F52FE /* Preview Assets.xcassets in Resources */,
 				3EA363E52B6D8B3E00218246 /* Zipper.mp3 in Resources */,
 				3ECCCBBF2B619504008F52FE /* Assets.xcassets in Resources */,
@@ -287,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF925132B7417A3007BCB5D /* SettingsView.swift in Sources */,
 				3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */,
 				3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,

@@ -8,31 +8,28 @@
 import SwiftUI
 import UIKit
 
-
 struct TrackAnimation: View {
-    @State var trackMove = false
+    @State var trackMove = true
     
     var body: some View {
         ZStack{
             Toggle("", isOn: $trackMove)
-            Image("Track Piece")
-                .offset(x: trackMove ? 0: 0, y: trackMove ? -500: 0)
-                .rotationEffect(Angle(degrees: trackMove ? 35: 0))
-                .animation(.easeInOut(duration: 0.5), value: trackMove)
-            Image("Track Piece")
-                .offset(x: trackMove ? 0: 0, y: trackMove ? -510: 10)
-                .rotationEffect(Angle(degrees: trackMove ? -35: 0))
-                .animation(.easeInOut(duration: 0.5), value: trackMove)
-            
+            VStack{
+                ForEach(1..<20) { index in
+                    Image("Track Piece")
+                        .offset(x: CGFloat(trackMove ? 100 + index: 0), y: CGFloat(trackMove ? -100 + (index * 10): 0) )
+                        .rotationEffect(Angle(degrees: trackMove ? 35: 0))
+                        .animation(.easeInOut(duration: 0.5), value: trackMove)
+                }
+                ForEach(1..<20) { index in
+                    Image("Track Piece")
+                        .offset(x: CGFloat(trackMove ? -100 + index: 0), y: CGFloat(trackMove ? -100 + (index * 10): 0) )
+                        .rotationEffect(Angle(degrees: trackMove ? -35: 0))
+                        .animation(.easeInOut(duration: 0.5), value: trackMove)
+                }
+            }
         }
     }
-    
-}
-func trackPath(){
-    let startingPoint = CGPoint(x: 0.0, y: 0.0)
-    let bezierPath = UIBezierPath()
-    bezierPath.move(to: startingPoint)
-    //bezierPath.addCurve(to: <#T##CGPoint#>, controlPoint1: <#T##CGPoint#>, controlPoint2: <#T##CGPoint#>)
 }
 
 #Preview {
