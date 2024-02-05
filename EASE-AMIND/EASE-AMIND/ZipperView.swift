@@ -31,10 +31,10 @@ struct ZipperView: View {
             
             VStack {
                 ColorPicker("Change the Background Color!", selection: $bgColor)
-                .padding(.horizontal)
+                    .padding(.horizontal)
                 //.frame(maxWidth: .infinity, maxHeight: .infinity)
                 //                  .ColorPicker.textColor = view.backgroundColor?.isDarkColor == true ? .white : .black
-                    SliderView()
+                SliderView()
             }
             .background(bgColor)
         }
