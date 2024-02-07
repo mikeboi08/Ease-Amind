@@ -20,10 +20,13 @@ extension UIColor
 
 
 struct ZipperView: View {
-    @State var bgColor = Color.clear
+    @State var bgColor = Color.customDarkBlue
     @State var zipperPulled = false
+    @State var isSheetShowing = false
+   //@Environment var backgroundColor =
     
     var body: some View {
+        
         
         ZStack {
             Color(.customDarkBlue)
