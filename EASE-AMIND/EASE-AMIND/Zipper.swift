@@ -21,7 +21,6 @@ struct Zipper: View {
                 RoundedRectangle(cornerRadius: radius)
                     .foregroundColor(.clear)
                 HStack {
-                    //Circle()
                     Image("Zipper")
                         .foregroundColor(Color.white)
                         .frame(width: thumbSize, height: thumbSize)
@@ -29,7 +28,7 @@ struct Zipper: View {
                         .gesture(
                             DragGesture(minimumDistance: 0)
                                 .onChanged { v in
-                                    if value.truncatingRemainder(dividingBy: 2) == 0 && value != 0{
+                                    if value != 0 {
                                         let generator = UIImpactFeedbackGenerator(style: .rigid)
                                         generator.impactOccurred()
                                         print(value)
