@@ -16,7 +16,6 @@ struct TrackPath: Shape {
         path.move(to: CGPoint(x: rect.midX, y: rect.maxY))
         
         let numberOfSegments: CGFloat = 24
-        
         let yPosition = position.y
         let yPositionOutOf12 = yPosition / (rect.height / numberOfSegments)
         
