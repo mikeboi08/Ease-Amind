@@ -4,61 +4,54 @@
 //
 //  Created by Jarvis Murray on 1/24/24.
 //
-
 import SwiftUI
-import UIKit
 
-class Zipper: UIViewController{
+struct Zipper: View {
+    @Binding var value: Double
+    @State var lastCoordinateValue: CGFloat = 0.0
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let view = UIView()
-        view.backgroundColor = .clear
-        
-        let zipper = UISlider(frame:CGRect(x: 10, y: 10, width: 700, height: 10))
-        zipper.center = self.view.center
-        zipper.transform = CGAffineTransform(rotationAngle: -80.11)
-        zipper.minimumValue = 0
-        zipper.maximumValue = 100
-        zipper.isContinuous = true
-        zipper.tintColor = .clear
-        
-        zipper.setThumbImage(UIImage(named: "Zipper"), for: .normal)
-        zipper.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
-        view.addSubview(zipper)
-        
-        
-        UIView.animate(withDuration: 0.8) {
-            zipper.setValue(80.0, animated: true)
-        }
-        self.view = view
-    }
-    
-    @objc func sliderValueDidChange(_ sender:UISlider!)
-    {
-        let currentValue = Int(sender.value)
-        if currentValue % 2 == 0 && currentValue != 0{
-            let generator = UIImpactFeedbackGenerator(style: .rigid)
-            generator.impactOccurred()
+    var body: some View {
+        GeometryReader { gr in
+            let thumbSize = gr.size.height * 0.4
+            let radius = gr.size.height * 0.5
+            let minValue = 0 * 0.015
+            let maxValue = (750 * 0.98) - thumbSize
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: radius)
+                    .foregroundColor(.clear)
+                HStack {
+                    //Circle()
+                    Image("Zipper")
+                        .foregroundColor(Color.white)
+                        .frame(width: thumbSize, height: thumbSize)
+                        .offset(x: self.value)
+                        .gesture(
+                            DragGesture(minimumDistance: 0)
+                                .onChanged { v in
+                                    if value.truncatingRemainder(dividingBy: 2) == 0 && value != 0{
+                                        let generator = UIImpactFeedbackGenerator(style: .rigid)
+                                        generator.impactOccurred()
+                                        print(value)
+                                    }
+                                    if (abs(v.translation.width) < 0.1) {
+                                        self.lastCoordinateValue = self.value
+                                    }
+                                    if v.translation.width > 0 {
+                                        self.value = min(maxValue, self.lastCoordinateValue + v.translation.width)
+                                    } else {
+                                        self.value = max(minValue, self.lastCoordinateValue + v.translation.width)
+                                    }
+                                }
+                        )
+                    Spacer()
+                }
+            }
+            .rotationEffect(Angle(degrees: 90))
         }
     }
 }
-
-struct SliderView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = Zipper
-    
-    func makeUIViewController(context: Context) -> Zipper {
-        let vc = Zipper()
-        return vc
-    }
-    
-    func updateUIViewController(_ uiViewController: Zipper, context: Context) {
-        // Updates the state of the specified view controller with new information from SwiftUI.
-    }
-}
-
 
 #Preview {
-    Zipper()
+    Zipper(value: .constant(1.0))
 }

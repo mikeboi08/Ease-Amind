@@ -21,6 +21,7 @@
 		3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE531482B64346B00E5CA3E /* Zipper.swift */; };
 		3EF925132B7417A3007BCB5D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF925122B7417A3007BCB5D /* SettingsView.swift */; };
 		3EFF7F172B72C25000DEA288 /* PencilZip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */; };
+		FF0200D22B7AA55700893AF4 /* TrackPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0200D12B7AA55700893AF4 /* TrackPath.swift */; };
 		FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		3EE531482B64346B00E5CA3E /* Zipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
 		3EF925122B7417A3007BCB5D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PencilZip.mp3; sourceTree = "<group>"; };
+		FF0200D12B7AA55700893AF4 /* TrackPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackPath.swift; path = ../TrackPath.swift; sourceTree = "<group>"; };
 		FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */,
 				3EA363DF2B6D89E100218246 /* TestingSound.swift */,
 				3EF925122B7417A3007BCB5D /* SettingsView.swift */,
+				FF0200D12B7AA55700893AF4 /* TrackPath.swift */,
 				3EA363E12B6D89FA00218246 /* Sound */,
 				3ECCCBBE2B619504008F52FE /* Assets.xcassets */,
 				3ECCCBCA2B619504008F52FE /* EASE-AMINDTests */,
@@ -298,6 +301,7 @@
 				3E1C34EB2B6210C00053D3E8 /* SplashScreen.swift in Sources */,
 				3EE531492B64346B00E5CA3E /* Zipper.swift in Sources */,
 				3ECCCBBD2B619502008F52FE /* ZipperView.swift in Sources */,
+				FF0200D22B7AA55700893AF4 /* TrackPath.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
 				3EA363E02B6D89E100218246 /* TestingSound.swift in Sources */,
 				FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */,
