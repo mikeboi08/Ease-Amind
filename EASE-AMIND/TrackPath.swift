@@ -96,5 +96,5 @@ struct TrackPath: Shape {
 
 #Preview {
     TrackPath(position: CGPoint(x: 100, y: 200), filled: false)
-        .stroke(lineWidth: 5)
+        .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .square, lineJoin: .bevel))
 }

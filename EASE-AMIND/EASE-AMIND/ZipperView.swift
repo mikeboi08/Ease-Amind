@@ -18,7 +18,6 @@ extension UIColor
     }
 }
 
-
 struct ZipperView: View {
     @State var bgColor = Color.customDarkBlue
     @State var currentValue: Double = 0.0
@@ -30,7 +29,6 @@ struct ZipperView: View {
     
     var body: some View {
         
-        
         ZStack {
             Color(.customDarkBlue)
                 .ignoresSafeArea()
@@ -38,6 +36,7 @@ struct ZipperView: View {
             VStack {
                 ColorPicker("Change the Background Color!", selection: $bgColor)
                     .padding(.horizontal)
+                    .frame(width: 400)
                 //.frame(maxWidth: .infinity, maxHeight: .infinity)
                 //                  .ColorPicker.textColor = view.backgroundColor?.isDarkColor == true ? .white : .black
                 ZStack{
@@ -52,12 +51,12 @@ struct ZipperView: View {
                         .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .square, lineJoin: .bevel))
                         .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
                     Zipper(value: $currentValue)
+                        .frame(width: 550, height: 10)
                 }
                 .ignoresSafeArea()
             }
             .background(bgColor)
         }
-        
     }
 }
 
