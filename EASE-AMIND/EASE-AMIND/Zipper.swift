@@ -16,7 +16,7 @@ struct Zipper: View {
             let thumbSize = gr.size.height * 0.4
             let radius = gr.size.height * 0.5
             let minValue = 0 * 0.015
-            let maxValue = (750 * 0.98) - thumbSize
+            let maxValue = (650 * 0.98) - thumbSize
             
             ZStack {
                 RoundedRectangle(cornerRadius: radius)
