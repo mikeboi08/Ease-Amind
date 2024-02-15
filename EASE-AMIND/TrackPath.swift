@@ -13,7 +13,12 @@ struct TrackPath: Shape {
     
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.move(to: CGPoint(x: rect.midX, y: rect.maxY))
+        path.move(to: CGPoint(x: rect.midX - 10, y: rect.maxY - 5))
+        //path.addCurve(to: CGPoint(x: rect.midX + 10, y: rect.maxY), control1: CGPoint(x: rect.midX - 10, y: rect.maxY), control2: CGPoint(x: rect.midX + 10, y: rect.maxY) )
+        //        path.addCurve(to: CGPoint(x: rect.midX + 30, y: rect.maxY - 20), control1: CGPoint(x: rect.midX + 30, y: rect.maxY), control2: CGPoint(x: rect.midX + 30, y: rect.maxY - 40))
+        //
+        //        path.addCurve(to: CGPoint(x: rect.midX + 10, y: rect.maxY - 40), control1: CGPoint(x: rect.midX + 40, y: rect.maxY - 40), control2: CGPoint(x: rect.midX, y: rect.maxY - 40))
+        //path.addLine(to: CGPoint(x: rect.midX - 10, y: rect.maxY - 30))
         
         let numberOfSegments: CGFloat = 24
         let yPosition = position.y
@@ -30,12 +35,26 @@ struct TrackPath: Shape {
                 xOutOffset = (yPositionOutOf12 - i + 1) * (yPositionOutOf12 - i) * -4 - 10
                 yUpOffset = (yPositionOutOf12 - i + 1) * 2
             }
+            //            let xIn = rect.midX + 10
+            //            let xIn2 = rect.midX - 10
+            //            let yIn = (yPositionOutOf12 - i) - (yPositionOutOf12 * 5)
+            //            let inward = CGPoint(x: xIn, y: yIn)
+            //            let inward2 = CGPoint(x: xIn2, y: yIn)
+            //            path.addCurve(to: inward, control1: inward2, control2: inward)
+            //
+            //            let xIn = rect.midX + 10
+            //            let xIn2 = rect.midX - 10
+            //            let yIn = (yPositionOutOf12 - i) - (yPositionOutOf12 * 5)
+            //            let inward = CGPoint(x: xIn, y: yIn)
+            //            let inward2 = CGPoint(x: xIn2, y: yIn)
+            //            path.addCurve(to: inward, control1: inward2, control2: inward)
+            //            path.addCurve(to: CGPoint(x: rect.midX + 10, y: rect.maxY - 40), control1: CGPoint(x: rect.midX + 40, y: rect.maxY - 40), control2: CGPoint(x: rect.midX, y: rect.maxY - 40))
+            //            path.addLine(to: CGPoint(x: rect.midX - 10, y: rect.maxY - 30))
             
             let xUp = rect.midX + xUpOffset + xOutOffset * 0.12
             let yUp1 = yUp - yUpOffset
             let up = CGPoint(x: xUp, y: yUp1)
             path.addLine(to: up)
-            
             let xOut = rect.midX - 20 + xOutOffset
             let out = CGPoint(x: xOut, y: yUp)
             path.addLine(to: out)

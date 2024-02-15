@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct Zipper: View {
+    
     @Binding var value: Double
     @State var lastCoordinateValue: CGFloat = 0.0
     
@@ -21,9 +22,12 @@ struct Zipper: View {
                 RoundedRectangle(cornerRadius: radius)
                     .foregroundColor(.clear)
                 HStack {
-                    Image("Zipper")
+                    Image("Zipper2")
                         .foregroundColor(Color.white)
                         .frame(width: thumbSize, height: thumbSize)
+                        .scaleEffect(CGSize(width: 0.50, height: 0.50))
+                        .offset(x: -25)
+                        .rotationEffect(Angle(degrees: -90))
                         .offset(x: self.value)
                         .gesture(
                             DragGesture(minimumDistance: 0)
@@ -31,7 +35,6 @@ struct Zipper: View {
                                     if value != 0 {
                                         let generator = UIImpactFeedbackGenerator(style: .rigid)
                                         generator.impactOccurred()
-                                        print(value)
                                     }
                                     if (abs(v.translation.width) < 0.1) {
                                         self.lastCoordinateValue = self.value

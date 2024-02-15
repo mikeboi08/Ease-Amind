@@ -22,7 +22,6 @@
 		3EF925132B7417A3007BCB5D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF925122B7417A3007BCB5D /* SettingsView.swift */; };
 		3EFF7F172B72C25000DEA288 /* PencilZip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */; };
 		FF0200D22B7AA55700893AF4 /* TrackPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0200D12B7AA55700893AF4 /* TrackPath.swift */; };
-		FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		3EF925122B7417A3007BCB5D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3EFF7F162B72C25000DEA288 /* PencilZip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PencilZip.mp3; sourceTree = "<group>"; };
 		FF0200D12B7AA55700893AF4 /* TrackPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackPath.swift; path = ../TrackPath.swift; sourceTree = "<group>"; };
-		FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +125,6 @@
 				3ECCCBBC2B619502008F52FE /* ZipperView.swift */,
 				3E1C34EA2B6210C00053D3E8 /* SplashScreen.swift */,
 				3EE531482B64346B00E5CA3E /* Zipper.swift */,
-				FF9728872B69DCB300FCD2B5 /* TrackAnimation.swift */,
 				3EA363DF2B6D89E100218246 /* TestingSound.swift */,
 				3EF925122B7417A3007BCB5D /* SettingsView.swift */,
 				FF0200D12B7AA55700893AF4 /* TrackPath.swift */,
@@ -304,7 +301,6 @@
 				FF0200D22B7AA55700893AF4 /* TrackPath.swift in Sources */,
 				3ECCCBBB2B619502008F52FE /* EASE_AMINDApp.swift in Sources */,
 				3EA363E02B6D89E100218246 /* TestingSound.swift in Sources */,
-				FF9728882B69DCB300FCD2B5 /* TrackAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
